@@ -1,5 +1,7 @@
 def fizzbuzz(number)
-  if number == 0
+  if !number.is_a?(Integer)
+    return "Enter a number"
+  elsif number == 0
     return number
   elsif (number % 3 == 0) && (number % 5 == 0)
     return "Fizzbuzz"

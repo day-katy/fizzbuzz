@@ -12,4 +12,7 @@ describe 'fizzbuzz' do
   it "returns 0 when passed 0" do
     expect(fizzbuzz(0)).to eq 0
   end
+  it 'returns "Enter a number" when passed !Integer' do
+    expect(fizzbuzz(!Integer)).to eq "Enter a number"
+  end
 end
